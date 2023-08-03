@@ -5,6 +5,15 @@
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
 */
+
+const goToProjectUrl = (project) => {
+  const projectUrl = {
+    ml: "https://multilogistic.gramedia.com/",
+    biller: "https://billing.gramedia.com/",
+  }
+  window.open(projectUrl[project], "_blank");
+}
+
 (function() {
   "use strict";
 
@@ -35,7 +44,7 @@
   }
 
   /**
-   * Easy on scroll event listener 
+   * Easy on scroll event listener
    */
   const onscroll = (el, listener) => {
     el.addEventListener('scroll', listener)
@@ -93,7 +102,7 @@
    */
   on('click', '.mobile-nav-toggle', function(e) {
     select('body').classList.toggle('mobile-nav-active')
-    this.classList.toggle('bi-list')
+    this.classList.toggle('fas fa-bars')
     this.classList.toggle('bi-x')
   })
 
@@ -200,14 +209,14 @@
   });
 
   /**
-   * Initiate portfolio lightbox 
+   * Initiate portfolio lightbox
    */
   const portfolioLightbox = GLightbox({
     selector: '.portfolio-lightbox'
   });
 
   /**
-   * Initiate portfolio details lightbox 
+   * Initiate portfolio details lightbox
    */
   const portfolioDetailsLightbox = GLightbox({
     selector: '.portfolio-details-lightbox',
@@ -263,7 +272,7 @@
   });
 
   /**
-   * Initiate Pure Counter 
+   * Initiate Pure Counter
    */
   new PureCounter();
 
