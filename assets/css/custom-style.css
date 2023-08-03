@@ -1,0 +1,40 @@
+/*=========================
+CUSTOM FONT
+===========================*/
+.font-bold {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.bg-button {
+    background-color: #5c636a;
+    opacity: .2;
+    margin: auto;
+    width: auto;
+    height: 300px;
+}
+
+.bg-button:hover {
+    background-color: #5c636a;
+    opacity: .2;
+}
+
+.bg-button:focus{
+    background-color: #5c636a;
+    opacity: .2;
+}
+
+.skill-image {
+    width: 100px;
+    height: auto;
+    margin: 30px;
+}
+
+.profile-picture {
+    height: auto;
+    width: 50%;
+    border-radius: 50%;
+    border: 4px solid #fff;
+    margin: 0 auto;
+    align-content: end;
+}
