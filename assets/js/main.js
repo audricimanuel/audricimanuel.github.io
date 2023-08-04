@@ -14,7 +14,7 @@ const goToProjectUrl = (project) => {
   window.open(projectUrl[project], "_blank");
 }
 
-function countWebVisitor() {
+const countWebVisitor = () => {
   // Check if the visitorCount exists in local storage
   let visitorCount = localStorage.getItem('visitorCount');
 
@@ -33,10 +33,9 @@ function countWebVisitor() {
   return visitorCount;
 }
 
-function updateVisitorCount() {
+const updateVisitorCount = () => {
   const visitorCountElement = document.getElementById('visitorCount');
-  const visitorCount = countWebVisitor();
-  visitorCountElement.textContent = visitorCount;
+  visitorCountElement.textContent = countWebVisitor();
 }
 
 (function() {
