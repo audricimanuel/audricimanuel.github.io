@@ -31,7 +31,7 @@
 
 </head>
 
-<body>
+<body onload="updateVisitorCount()">
 
   <!-- ======= Mobile nav toggle button ======= -->
   <!-- <button type="button" class="mobile-nav-toggle d-xl-none"><i class="bi bi-list mobile-nav-toggle"></i></button> -->
@@ -255,6 +255,7 @@
         <a href="https://instagram.com/audricimanuel/" class="instagram"><i class="fab fa-instagram"></i></a>
         <a href="https://linkedin.com/in/audric-tjhoernandes/" class="linkedin"><i class="fab fa-linkedin"></i></a>
       </div>
+      <p hidden="true" style="display: none">Visitor: <span id="visitorCount">0</span></p>
     </div>
   </footer><!-- End Footer -->
 
