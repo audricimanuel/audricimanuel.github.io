@@ -14,30 +14,6 @@ const goToProjectUrl = (project) => {
   window.open(projectUrl[project], "_blank");
 }
 
-const countWebVisitor = () => {
-  // Check if the visitorCount exists in local storage
-  let visitorCount = localStorage.getItem('visitorCount');
-
-  // If visitorCount is not present in local storage, initialize it to 0
-  if (!visitorCount) {
-    visitorCount = 0;
-  }
-
-  // Increment the visitorCount by 1
-  visitorCount = parseInt(visitorCount) + 1;
-
-  // Save the updated visitorCount back to local storage
-  localStorage.setItem('visitorCount', visitorCount);
-
-  // Return the updated visitorCount
-  return visitorCount;
-}
-
-const updateVisitorCount = () => {
-  const visitorCountElement = document.getElementById('visitorCount');
-  visitorCountElement.textContent = countWebVisitor();
-}
-
 (function() {
   "use strict";
 
